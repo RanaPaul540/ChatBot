@@ -1,0 +1,90 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#202123;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+}
+
+.header{
+    background:#202123;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-bottom:1px solid #333;
+}
+
+.chat-box{
+    flex:1;
+    overflow-y:auto;
+    background:#343541;
+    padding:20px;
+}
+
+.user-message{
+    background:#19C37D;
+    color:white;
+    padding:12px 18px;
+    border-radius:15px;
+    margin:10px 0;
+    margin-left:auto;
+    width:fit-content;
+    max-width:70%;
+}
+
+.bot-message{
+    background:#444654;
+    color:white;
+    padding:12px 18px;
+    border-radius:15px;
+    margin:10px 0;
+    width:fit-content;
+    max-width:70%;
+}
+
+.input-area{
+    display:flex;
+    padding:20px;
+    background:#202123;
+    border-top:1px solid #333;
+}
+
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:16px;
+    background:#40414F;
+    color:white;
+    border-radius:12px;
+    font-size:16px;
+}
+
+button{
+    width:55px;
+    border:none;
+    margin-left:10px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:20px;
+}
+
+#voiceBtn{
+    background:#444654;
+    color:white;
+}
+
+#sendBtn{
+    background:#19C37D;
+    color:white;
+}

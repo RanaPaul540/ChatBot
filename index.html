@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>AI Assistant</h1>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+
+        <div class="bot-message">
+            Hello 👋 I am your AI assistant
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+            type="text"
+            id="userInput"
+            placeholder="Ask anything..."
+        >
+        <button id="voiceBtn">🎤</button>
+        <button id="sendBtn">▶</button>
+
+    </div>
+
+</div>
+
+
+<script src="{{ url_for('static',
+filename='script.js') }}">
+</script>
+
+</body>
+</html>
